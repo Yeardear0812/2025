@@ -1,0 +1,51 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    position: relative;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMNSURBVGiB7ZlNaBNBGIbfmd1NtmkSE5PWtFVR/EGpRVHxIh5E8CB4EG+CB8WDFBQPghfBkyAi4kUQROhBEcSDICIIIiIIIhREEX+wWmxttbW2SZN0k+xuZjyYQrrf7iYzs9u68DzwHXa+ed+ZnW9ngQgRIkSIEOF/BhljdL1SqZwoFArnwzD0AYAxRhljFADK5fLpQqFwDkC9WCxeYYwxwzBsAEgkEjP1en2qVCpddV33CwAQQigAEEJoqVQ6XygUzhqG4dZqtWmlVDoMAMlkcqZarZ4sl8vnGWOBZVnfAYAxRqvV6mS5XL7guu5Xy7K+AQCllP7d+/v5fH7Stm0bAEzTnNd1/TAAJBKJmUqlcqJYLF4OgsCzbfsHAFBKKQDk8/mL+Xz+kmVZPwFAluUDAJBKpT7Ytv2xUqlcd133m2VZ8wAgSZICALquH6rVapPFYvGK7/uu4zgLAEApJQAwn89fymQyVx3HWQQASZIUQggFAE3T9tm2/b5UKl3zfX/Jdd1fACDLsgwAmqbtq9frU4VC4Zzv+0uO4/wEAEmSJADQNG1vtVo9VSqVrvq+v+Q4zq9/CFiWNZ/NZq8bhrEMAJIkyYQQCgCapp2s1+tThUIh6bruN9u2FwBAkiQZADRN21ur1U4Xi8XLQRAsu647DwCEEAoAmqbttSzrXS6Xu0EIWQEASZJkQggFAFVV9zSbzTeFQuGc53lLruv+BgBZlmUA0DRtT7PZfJvL5W76vr/sOM4vAJBlWQYAVVV3m6b5OpvN3pQkaRUACCEUAFRV3W2a5qtcLndLkqRVx3EWAUCWZRkAVFXdZZrmy2w2e4sQsgIAkiTJhBAKAKqq7jJN82U2m70tSdKq4zi/AUCW5Y0LDAA7TNOcyWazd2RZXnUcZwEAZFmWAUBV1Z2mab7IZrP3CCErAEAIoQCgquoO0zSfZ7PZ+7IsrzqO8xsAZFmWAUBV1R2GYTzLZDIPCCErACBJkkwIoQCgquoOwzCeZjKZh4SQFcdxFgBAluWNCwwA2w3DeJLJZB4RQlYcx1kAAFmWZQDYrqrqY0VRHhNCVhzH+QMAkiTJEf4d/gIrR3b2lT6+cgAAAABJRU5ErkJggg==");
+    background-size: 50px 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: cactusMove 1.5s infinite linear;
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes cactusMove {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 600px;
+    }
+} 

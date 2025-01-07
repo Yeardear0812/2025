@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Шашки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="position: fixed; top: 20px; left: 20px;">
+        <a href="../index.html" style="
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        ">← Назад</a>
+    </div>
+    <div class="game-container">
+        <div class="score-container">
+            <div class="score white-score">
+                <span>Білі:</span>
+                <span id="white-score">12</span>
+            </div>
+            <div id="turn-indicator">Хід: Білих</div>
+            <div class="score black-score">
+                <span>Чорні:</span>
+                <span id="black-score">12</span>
+            </div>
+        </div>
+        <div id="board"></div>
+        <div id="winner-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="winner-text"></h2>
+                <button id="restart-button">Нова гра</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
