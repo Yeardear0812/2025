@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Тетріс</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="score">Рахунок: <span id="score">0</span></div>
+            <div class="level">Рівень: <span id="level">1</span></div>
+        </div>
+        <div class="game-area">
+            <canvas id="game" width="200" height="400"></canvas>
+            <div class="side-panel">
+                <div class="next-piece">
+                    <h3>Наступна фігура:</h3>
+                    <canvas id="nextPiece" width="80" height="80"></canvas>
+                </div>
+                <button id="startBtn" onclick="toggleGame()">Старт</button>
+                <button id="pauseBtn" onclick="togglePause()">Пауза</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="moveLeft()">⬅️</button>
+            <button onclick="rotate()">🔄</button>
+            <button onclick="moveRight()">➡️</button>
+            <button onclick="moveDown()">⬇️</button>
+            <button onclick="hardDrop()">⬇️⬇️</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
